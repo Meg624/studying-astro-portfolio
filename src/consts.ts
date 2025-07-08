@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "Megumi Izu's portfolio";
 export const SITE_DESCRIPTION = "Megumi Izu's portfolio!";
+export const JOB_TITLE = "web developer and UX designer";
