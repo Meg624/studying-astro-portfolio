@@ -2,7 +2,7 @@
 
 :root {
 	--primary-color: #64b5f6;
-	--secondary-color: #981c784;
+	--secondary-color: #981c78;
 	--text-color:#e0e0e0;
 	--bg-color: #121212;
 	--card-bg-color: #1e1e1e;
@@ -144,5 +144,11 @@ hr {
 		padding: 1em;
 	}
 }
-
-
+    .gradient-text {
+      font-weight: 700;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
