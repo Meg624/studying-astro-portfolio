@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, JOB_TITLE } from '../consts.js';
 // import timeline from '../components/about/timeline.astro';
-import Timeline from '../components/about/timeline.astro';
+import Timeline from '../components/about/Timeline.astro'
+
 
 
 
@@ -32,7 +33,7 @@ const myName = 'Meguim Izu';
 			<h3>経歴</h3>
 
 			<Timeline date="2024年" title="フリーランスエンジニアとして活動開始">
-				<p>エンジニアとしてのスキルを磨きながら、ボランティア活動を通じて地域社会に貢献しています。</p>
+				<p>エンジニアとしてのボランティア活動を通じて、地域社会に貢献しています。</p>
 			</Timeline>
       <Timeline date="2020年 - 2023年" title="イギリスでの留学生活">
 				<p>イギリスでの留学生活を通じて、様々な文化や価値観に触れ、視野を広げることができました。</p>
@@ -73,5 +74,19 @@ const myName = 'Meguim Izu';
 		color: var(--primary-color);
 	}
 
+  @media (max-width: 720px) {
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+		.profile-image {
+			width: 120px;
+			height: 120px;
+			margin-right: 0;
+			margin-bottom: 1.5rem;
+		}
+
+
+  }
 
 </style>
