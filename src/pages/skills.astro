@@ -2,11 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts.js';
 import KeyVisual from '../components/top/KeyVisual.astro';
+import SkillContainer from '../components/skills/SkillContainer.astro';
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-	<KeyVisual />
-	<main>
-		<!-- 独自にコンテンツを作成 -->
+
+	<main class="page-container">
+		<h1 class="gradient-text page-title">Skills</h1>
+		<p>ここにスキルに関する説明文を追加します。
+			スキルの詳細や経験について、具体的な内容を記載することができます。
+		</p>
+	<SkillContainer />
 	</main>
 </Layout>
+
+<style>
+
+
+	p {
+		font-size: 1rem;
+		margin-bottom: 2.5rem;
+	}
