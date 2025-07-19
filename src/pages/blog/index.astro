@@ -6,7 +6,10 @@ import FormattedDate from '../../components/FormattedDate.astro'
 
 // pubDate の降順 （新しい順） でソート
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+
+
 ---
+
 
 <Layout title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION}>
   <main class='page-container'>

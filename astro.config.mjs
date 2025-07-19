@@ -10,6 +10,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://Meg624.github.io',
+    base: '/studying-astro-portfolio',
     integrations: [mdx(), sitemap(), icon(), react()],
 });
 
